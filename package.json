@@ -1,0 +1,26 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Demo express app",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "development": "NODE_ENV=development node app.js",
+    "staging": "NODE_ENV=staging pm2 start app.js",
+    "production": "NODE_ENV=production pm2 start app.js"
+  },
+  "author": "Harshil Soni",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.11.11",
+    "socket.io": "^3.0.5"
+  }
+}
